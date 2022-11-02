@@ -4,8 +4,6 @@ const Cors=require('cors')
 
 const app=express();
 
-const WhiteList=["http://localhost:4200/Login"]
-
 //Middware
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
@@ -15,8 +13,6 @@ app.use(URL,require('../Routers/GetBD'));
 app.use(URL,require('../Routers/PostBD'));
 
 //Confg
-app.use(Cors({
-    origin:WhiteList
-}));
+app.use(Cors());
 
 module.exports=app;
