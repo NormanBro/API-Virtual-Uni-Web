@@ -4,7 +4,7 @@ const Cors=require('cors')
 
 const app=express();
 
-const WhiteList=["http://localhost:4200/"]
+const WhiteList=["http://localhost:4200/Login"]
 
 //Middware
 app.use(express.json());
