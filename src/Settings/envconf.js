@@ -6,7 +6,7 @@ const DataBase=process.env.DataBase;
 const Password=process.env.Password;
 
 const PORT=process.env.PORT;
-const URL=process.env.URL
+const URL=process.env.URLAPI
 
 module.exports={
     BDUSER,
